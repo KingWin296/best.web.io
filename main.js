@@ -1,3 +1,4 @@
+console.log('Hello World');
 const containerIcon = document.getElementById("boxIcon");
 const buttonIcon = document.querySelector("#buttonMore");
 
