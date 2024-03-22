@@ -1,3 +1,6 @@
+:root{
+  --main-color: #ffaa00;
+}
 *{
   margin: 0;
   padding: 0;
@@ -37,7 +40,7 @@ body{
   color: #798f9b;
 }
 .top-logo h1{
-  color: #ffaa00;
+  color: var(--main-color);
 }
 .top-nav a{
   text-decoration: none;
@@ -91,8 +94,21 @@ body{
   text-decoration: underline;
   margin: 0 10px;
 }
-.div-blank a{
+.container-icon{
+  display: flex;
+  align-items: center;
+}
+.container-icon a{
+  text-decoration: none;
   margin: 0 15px;
+}
+.container-icon i{
+  font-size: 40px;
+  color: black;
+  transition: color 0.15s;
+}
+.container-icon i:hover{
+  color: var(--main-color);
 }
 .container{
   margin-top: 20px;
@@ -116,4 +132,42 @@ footer{
   background-color: gray;
   height: 100px;
   margin-top: 50px;
+}
+@media screen and (max-width: 400px) {
+  .div-blank{
+    position: relative;
+  }
+  .div-blank h4{
+    cursor: pointer;
+  }
+  .container-icon{
+    position: absolute;
+    top: 44px;
+    left: 25px;
+    flex-direction: column;
+    background-color: #545657c8;
+    backdrop-filter: blur(16px);
+    border-radius: 0 0 8px 8px;
+    width: 60px;
+    height: 0;
+  }
+  .container-icon a{
+    margin: 0;
+  }
+  .container-icon i{
+    opacity: 0;
+    transition: opacity 0.15s, font-size 0.35s;
+    color: white;
+    font-size: 0;
+  }
+  .container-icon.show{
+    height: auto;
+  }
+  .container-icon.show a{
+    margin: 10px 15px;
+  }
+  .container-icon.show i{
+    font-size: 40px;
+    opacity: 1;
+  }
 }
