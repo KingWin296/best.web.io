@@ -29,9 +29,9 @@ body{
   display: flex;
   cursor: pointer;
 }
-.top-list img{
-  width: 26px;
-  height: 26px;
+.ri-menu-line{
+  font-size: 23px;
+  color: black;
 }
 .top-logo a{
   text-decoration: none;
@@ -56,9 +56,8 @@ body{
   align-items: center;
   justify-content: center;
 }
-.search-bar img{
-  width: 28px;
-  height: 28px;
+.ri-search-eye-line{
+  font-size: 28px;
 }
 .search-bar input{
   width: 70%;
@@ -76,12 +75,12 @@ body{
   border: none;
   border-radius: 0 100% 100% 0;
   background-color: rgba(255, 255, 255, 0.878);
-  padding: 4px 0;
+  padding: 3.2px;
   outline: none;
   cursor: pointer;
 }
-.button-search img{
-  height: 18px;
+.ri-search-2-line{
+  font-size: 18px;
 }
 .div-blank{
   background-color: white;
@@ -133,7 +132,7 @@ footer{
   height: 100px;
   margin-top: 50px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 720px) {
   .div-blank{
     position: relative;
   }
